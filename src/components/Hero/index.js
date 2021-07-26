@@ -1,46 +1,42 @@
 import React from "react";
 import {
   HeroSection,
-  HeroSocMedWrapper,
-  HeroSocMed,
   HeroContent,
-  HeroImg,
-} from "./HeroStyles";
-import codingSVG from "../../assets/coding.svg";
-import linked_in from "../../assets/linkedin-app.svg";
-import fb from "../../assets/fb.svg";
-import insta from "../../assets/insta.svg";
-import github from "../../assets/github.svg";
-import twitter from "../../assets/twitter.svg";
+  HeroArrowLink,
+  ArrowDown,
+  HeroSocialMediaWrapper,
+  SocialMedia,
+} from "./s_Hero";
 
-const index = () => {
+const index = ({ heroContent, socMed }) => {
   return (
     <HeroSection>
-      {/* Social Medias - Fixed */}
-      <HeroSocMedWrapper>
-        <HeroSocMed>
-          <img src={linked_in} alt="" />
-          <img src={fb} alt="" />
-          <img src={insta} alt="" />
-          <img src={github} alt="" />
-          <img src={twitter} alt="" />
-        </HeroSocMed>
-
-        <div className="divider"></div>
-      </HeroSocMedWrapper>
-
-      {/* Main Content - Centered */}
+      {/* Main content */}
       <HeroContent>
-        <HeroImg>
-          <img src={codingSVG} alt="" srcset="" />
-        </HeroImg>
-        <h1>Hi, I am Nikko</h1>
-        <p>Web Developer, Web Designer</p>
+        {heroContent.map((item) => {
+          return (
+            <>
+              <img src={item.codingSVG} alt="" />
+              <h1>{item.tagline}</h1>
+              <p>{item.subTagline}</p>
+            </>
+          );
+        })}
       </HeroContent>
 
-      {/* Arrow - fixed - bottom */}
+      {/* Arrow Down Button - Leads to About section */}
+      <HeroArrowLink>
+        <ArrowDown />
+      </HeroArrowLink>
 
-      <i class="fas fa-chevron-down arrow-down"></i>
+      {/* Social Medias - Fixed */}
+      <HeroSocialMediaWrapper>
+        <SocialMedia>
+          {socMed.map((socMedItem) => {
+            return <img src={socMedItem.socMedSvg} alt="" />;
+          })}
+        </SocialMedia>
+      </HeroSocialMediaWrapper>
     </HeroSection>
   );
 };
