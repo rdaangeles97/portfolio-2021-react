@@ -10,12 +10,14 @@ export const MainStyles = {
   secondaryColor: "#F0A500",
   tertiaryColor: "#FFD500",
   quarternaryColor: "#FFFFFF",
+  quinaryColor: "#CF7500",
   primaryFont: "'Rock Salt', cursive; sans-serif",
   secondaryFont: "'Montserrat', sans-serif;",
   heroLogo: HeroLogo,
   largeFontSize: "3.5rem",
   mediumFontSize: "2rem",
   smallFontSize: "3rem;",
+  mobilePfontSize: "1rem",
 };
 
 export const SocialMedia = [

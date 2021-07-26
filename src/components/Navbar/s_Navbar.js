@@ -12,9 +12,18 @@ export const MainNav = styled.nav`
   justify-content: space-between;
   padding: 0 2rem;
   z-index: 999;
-  max-width: 100rem;
+  /* max-width: 100rem; */
   left: 50%;
   transform: translateX(-50%);
+
+  &.scrolled {
+    background-color: ${MainStyles.quarternaryColor};
+    transition: all 0.3s ease-in-out;
+  }
+
+  @media screen and (min-width: 40em) {
+    width: 95%;
+  }
 `;
 
 export const LogoLink = styled(Link)`
@@ -28,7 +37,7 @@ export const LogoLink = styled(Link)`
 // NavLinks on Desktop/Large device
 export const NavItems = styled.div`
   display: none;
-  
+
   @media screen and (min-width: 64em) {
     width: 50%;
     display: flex;
@@ -55,4 +64,8 @@ export const NavBurgerMenu = styled.div`
 export const BurgerMenu = styled(FaBars)`
   font-size: 2rem;
   color: white;
+
+  &.scrolled {
+    color: ${MainStyles.primaryColor};
+  }
 `;

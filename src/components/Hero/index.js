@@ -7,7 +7,7 @@ import {
   HeroSocialMediaWrapper,
   SocialMedia,
 } from "./s_Hero";
-
+import { Link } from "react-scroll";
 const index = ({ heroContent, socMed }) => {
   return (
     <HeroSection>
@@ -26,7 +26,14 @@ const index = ({ heroContent, socMed }) => {
 
       {/* Arrow Down Button - Leads to About section */}
       <HeroArrowLink>
-        <ArrowDown />
+        <Link
+          to="about-sect"
+          spy={true}
+          smooth={true}
+          duration={1000}
+        >
+          <ArrowDown />
+        </Link>
       </HeroArrowLink>
 
       {/* Social Medias - Fixed */}

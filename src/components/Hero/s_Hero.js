@@ -63,6 +63,7 @@ export const HeroArrowLink = styled.div`
 `;
 export const ArrowDown = styled(MdKeyboardArrowDown)`
   font-size: 4rem;
+  cursor: pointer;
 `;
 
 // Social Media
@@ -73,12 +74,10 @@ export const HeroSocialMediaWrapper = styled.div`
     display: block;
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 3%;
     height: 25rem;
-    width: 100%;
-    max-width: 100rem;
     padding: 0 2rem;
+    z-index: 999;
 
     &::before {
       content: "";
@@ -97,6 +96,8 @@ export const SocialMedia = styled.div`
   flex-direction: column;
   position: relative;
   cursor: pointer;
+  max-width: 2rem;
+
   img {
     max-width: 1.7rem;
     margin-bottom: 2rem;

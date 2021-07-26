@@ -1,4 +1,6 @@
 import React from "react";
+// import $ from "jquery";
+
 import {
   MainNav,
   LogoLink,
@@ -9,6 +11,14 @@ import {
 } from "./s_Navbar";
 import { MainStyles } from "../../data/GlobalData";
 const index = () => {
+  // $(window).scroll(() => {
+  //   if ($(window).scrollTop() === 0) {
+  //     $("nav").removeClass("scrolled");
+  //   } else {
+  //     $("nav").addClass("scrolled");
+  //     $("burger-menu").addClass("scrolled");
+  //   }
+  // });
   return (
     <MainNav>
       <LogoLink to="/">
@@ -17,13 +27,12 @@ const index = () => {
       {/* On Desktop/Large Device */}
 
       <NavItems>
-        <NavLink to="/about">About</NavLink>
         <NavLink to="/skills">Skills</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
       </NavItems>
       {/* On Mobile */}
-      <NavBurgerMenu className="show-for-small">
+      <NavBurgerMenu>
         <BurgerMenu />
       </NavBurgerMenu>
     </MainNav>
