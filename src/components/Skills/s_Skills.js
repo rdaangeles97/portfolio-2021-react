@@ -5,8 +5,9 @@ export const SkillsSection = styled.section``;
 
 // Header Section
 export const SkillsHeader = styled.div`
-  height: 50vh;
   background-image: url(${SkillsSectionData.skillsHeaderBg});
+
+  height: 50vh;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -71,6 +72,7 @@ export const Skill = styled.div`
   width: 100%;
   max-width: 40rem;
   padding: 2rem;
+
   h2,
   p {
     font-family: ${MainStyles.secondaryFont};

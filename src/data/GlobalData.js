@@ -4,10 +4,14 @@ import sm_linked_in from "../assets/linkedin-app.svg";
 import sm_fb from "../assets/fb.svg";
 import sm_insta from "../assets/insta.svg";
 import sm_twitter from "../assets/twitter.svg";
-
+import ellipseBlur from "../assets/ellipse-blur.svg";
 // Skills Section
 import skillsHeaderBg from "../assets/skillsBg.jpg";
 import skillArrow from "../assets/skill-arrow.png";
+
+import projHeaderBg from "../assets/projBg.jpg";
+import contactHeaderBg from "../assets/projBg.jpg";
+
 export const MainStyles = {
   primaryColor: "#434343",
   secondaryColor: "#F0A500",
@@ -21,6 +25,7 @@ export const MainStyles = {
   mediumFontSize: "2rem",
   smallFontSize: "3rem;",
   mobilePfontSize: "1rem",
+  pagesEllipse: ellipseBlur,
 };
 
 export const SocialMedia = [
@@ -83,4 +88,15 @@ export const SkillsSectionData = {
         "In ut dapibus elit. Pellentesque nibh quam, convallis ac tincidunt at, ullamcorper at velit. Ut imperdiet pharetra turpis, eu ultrices risus eleifend nec.",
     },
   ],
+};
+
+export const ProjectsSectionData = {
+  projHeaderBg: projHeaderBg,
+  projHeaderText: "Case Studies.",
+};
+
+
+export const ContactSectonData = {
+  contactHeaderBg: contactHeaderBg,
+  contactHeaderText: "How you can reach me?",
 };

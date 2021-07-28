@@ -30,9 +30,9 @@ const index = () => {
         {/* On Desktop/Large Device */}
 
         <NavItems>
-          <NavLink to="/skills">Skills</NavLink>
-          <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <NavLink to="/skills" activeClassName="is-active">Skills</NavLink>
+          <NavLink to="/projects" activeClassName="is-active">Projects</NavLink>
+          <NavLink to="/contact" activeClassName="is-active">Contact</NavLink>
         </NavItems>
         {/* On Mobile */}
         <NavBurgerMenu>

@@ -90,6 +90,12 @@ export const NavLink = styled(Link)`
       width: 100%;
     }
   }
+
+  &.is-active {
+    &::before {
+      width: 100%;
+    }
+  }
 `;
 
 // Burger Menu on Mobile

@@ -6,7 +6,7 @@ import {
   SkillsWrapper,
   Skill,
 } from "./s_Skills";
-
+import { MainStyles } from "../../data/GlobalData";
 const index = ({ skillsData }) => {
   return (
     <SkillsSection>
@@ -14,9 +14,10 @@ const index = ({ skillsData }) => {
         <h1>{skillsData.skillsHeaderText}</h1>
         <div className="overlay"></div>
       </SkillsHeader>
+
+      {/* Content */}
       <SkillsContent>
         <p className="skill-headline">{skillsData.skillsContentHeadline}</p>
-
         <SkillsWrapper>
           {skillsData.skillsContentSkills.map((skill) => {
             return (

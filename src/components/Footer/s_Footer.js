@@ -3,6 +3,7 @@ import footerPath from "../../assets/footer-path.png";
 export const FooterSection = styled.section`
   height: 3rem;
   position: relative;
+  background-color: white;
 `;
 
 export const FooterPath = styled.div`
